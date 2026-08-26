@@ -19,10 +19,22 @@ This project functions as a **smart digital judge and compliance assistant**. It
 
 ---
 
+### 🔍 Assessment Pipeline
+
+Every compliance question goes through a structured evaluation process — from identifying the type of AI involvement, through determining your legal role and checking applicable articles, to delivering a final assessment:
+
+![Assessment Pipeline](pipeline.png)
+
+If a key fact is missing at any step (e.g., who controls the user interface, or whether a model was substantially modified), the skill stops and asks a targeted question before proceeding. It never guesses.
+
+---
+
 ### 🚀 Installation & Usage
 
 #### STEP 1: Install in Your Environment
 Copy this repository folder into your AI assistant or IDE skills directory (e.g., `.gemini/skills/`, `.agents/skills/`, or load it directly into your AI agent).
+
+Alternatively, download the ready-made **`eu-ai-act-compliance.skill`** package from the [Releases](https://github.com/TrivicM/eu-ai-act-compliance-skill/releases) page and load it directly into your AI agent or IDE.
 
 #### STEP 2: Ask in Plain Language
 In your normal conversation with your AI assistant, simply describe what you are building or publishing:
