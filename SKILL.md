@@ -1,8 +1,5 @@
 ---
 name: eu-ai-act-compliance
-metadata:
-  version: 1.0.0
-  legal_baseline_date: 2026-08-08
 description: >
   EU AI Act compliance gatekeeper. Use when the user is developing AI systems, writing AI code,
   integrating APIs (OpenAI, Anthropic), developing web content, generating synthetic media (deepfakes, audio, text, images),
@@ -11,7 +8,9 @@ description: >
   "Article 50", "da li ovo moram da oznacim", "AI Act procena", "is this AI compliant".
 ---
 
-# EU AI Act Compliance Gatekeeper
+# EU AI Act Compliance Gatekeeper (v1.0.0)
+
+> **Metadata:** Version 1.0.0 | Legal Baseline Date: 2026-08-08
 
 This skill acts as a gatekeeper for professional AI workflows (coding, content creation, agentic systems).
 Its primary purpose is to prevent legal oversights (**under-compliance**) while avoiding unnecessary tagging and disclosures (**over-compliance**).
