@@ -1,5 +1,8 @@
 # Article 50 - Transparency Obligations (EU AI Act)
 
+> **Legislative source:** Based on Regulation (EU) 2024/1689 as consolidated on EUR-Lex (version of 27 July 2026), incorporating Amending Regulation (EU) 2026/1744.
+> **Current-law verification:** The applicable legal text must be verified against the latest EUR-Lex version before issuing a compliance assessment.
+
 This reference outlines obligations for AI systems interacting with natural persons or generating synthetic content, based on the official text of the Regulation.
 
 ## A. Human Interaction (Article 50(1))

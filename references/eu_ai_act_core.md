@@ -1,5 +1,8 @@
 # EU AI Act - Core Framework and Roles (August 2026)
 
+> **Legislative source:** Based on Regulation (EU) 2024/1689 as consolidated on EUR-Lex (version of 27 July 2026), incorporating Amending Regulation (EU) 2026/1744.
+> **Current-law verification:** The applicable legal text must be verified against the latest EUR-Lex version before issuing a compliance assessment.
+
 To determine whether and how obligations under the EU AI Act apply, it is essential to first identify actor roles and risk levels.
 
 ## 1. Provider vs. Deployer (Articles 3 & 25)

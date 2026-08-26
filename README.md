@@ -4,9 +4,11 @@
 
 If you develop software, create content, or integrate AI agents and models, this is a question you will inevitably face.
 
-The European Union's landmark legislation (**EU AI Act — Regulation (EU) 2024/1689**) establishes clear transparency rules:
-* ⚠️ **Disclosure Required:** If AI generates or manipulates audio, image, or video content resembling real persons or authentic events (*deepfakes*), the law mandates clear labeling to prevent deception.
-* ✅ **No Disclosure Required:** If you use AI solely for routine tasks like color correction, image upscaling, text formatting, or writing software code, there is no requirement to burden users with AI labels.
+The European Union's landmark AI legislation (**EU AI Act — Regulation (EU) 2024/1689**), complemented by the European Commission's Guidelines on Article 50 (20 July 2026), sets out transparency obligations that apply from **2 August 2026**. The rules depend on the type of AI output, your legal role, and the specific context of use:
+
+* 🏷️ **Provider obligations (Article 50(1) & 50(2)):** Providers of AI systems interacting directly with natural persons must inform users that they are interacting with AI, unless this is obvious from the circumstances and context. Providers of AI systems generating synthetic audio, image, video, or text must ensure that outputs are marked in a machine-readable format as artificially generated or manipulated, subject to the conditions and exceptions set out in Article 50.
+* 📢 **Deployer obligations (Article 50(3) & 50(4)):** Deployers must inform natural persons exposed to emotion recognition or biometric categorisation systems, and must disclose AI-generated or manipulated deepfakes and AI-generated or manipulated text published to inform the public on matters of public interest — unless the content has undergone appropriate human review or editorial control by a person holding editorial responsibility.
+* ✅ **Exceptions exist** — but they are narrowly defined. Routine editing tasks that do not substantially alter the semantics of input (such as technically auxiliary processing) may fall outside marking obligations. Whether a specific use case qualifies requires a fact-specific assessment.
 
 This project functions as a **smart digital judge and compliance assistant**. Its mission is to provide developers, creators, and organizations with instant, precise compliance assessments grounded directly in EU law.
 
@@ -56,7 +58,7 @@ No rigid format is required. Simply specify:
 
 ### ⚠️ Legal Disclaimer
 
-This skill provides compliance assessments based on the official text of the EU AI Act (Regulation (EU) 2024/1689). It is designed as an engineering and practical decision-support tool for initial compliance checks and does not constitute formal legal advice from a licensed attorney.
+This skill provides compliance assessments based on the official text of the EU AI Act (Regulation (EU) 2024/1689) and relevant official Commission guidance, including the Commission Guidelines on transparency obligations under Article 50 (adopted 20 July 2026) and the Code of Practice on Transparency of AI-Generated Content. The Commission itself notes that the Guidelines complement and clarify the obligations set out in Article 50. This skill is designed as a practical decision-support tool for initial compliance checks and does not constitute formal legal advice from a licensed attorney. The reference materials are structured summaries of the relevant legal provisions; where current-law verification is required, the skill follows its living-law rule and verifies the applicable text against EUR-Lex before reaching a conclusion.
 
 ---
 
@@ -65,5 +67,6 @@ This skill provides compliance assessments based on the official text of the EU 
 | Parameter | Value |
 | :--- | :--- |
 | **Skill Version** | `1.0.0` |
-| **Legal Baseline Date** | `2026-08-08` |
+| **Legal Baseline Date** | `2026-08-26` |
 | **Primary Legislation** | EU AI Act — Regulation (EU) 2024/1689 (Articles 25 & 50) |
+| **Commission Guidelines** | Transparency obligations under Article 50 — adopted 20 July 2026 |
