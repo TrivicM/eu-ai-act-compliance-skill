@@ -1,5 +1,6 @@
 ---
 name: eu-ai-act-compliance
+version: 1.0.0
 description: >
   EU AI Act compliance gatekeeper. Use when the user is developing AI systems, writing AI code,
   integrating APIs (OpenAI, Anthropic), developing web content, generating synthetic media (deepfakes, audio, text, images),
