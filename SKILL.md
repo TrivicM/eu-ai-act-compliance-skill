@@ -5,7 +5,7 @@ description: >
   integrating APIs (OpenAI, Anthropic), developing web content, generating synthetic media (deepfakes, audio, text, images),
   or asking about AI compliance/labels. 
   Triggers: "EU AI Act", "AI compliance", "AI label", "watermark", "deepfake label", "C2PA",
-  "Article 50", "da li ovo moram da oznacim", "AI Act procena", "is this AI compliant".
+  "Article 50", "do I need to label this", "AI Act assessment", "is this AI compliant".
 ---
 
 # EU AI Act Compliance Gatekeeper (v1.0.0)
