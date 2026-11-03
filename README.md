@@ -1,5 +1,12 @@
 # EU AI Act Compliance Skill 🤖📜
 
+[![Listed on MCPRush](https://img.shields.io/badge/Marketplace-MCPRush_v1.0.0-6366f1?style=flat-square&logo=sparkles&logoColor=white)](https://mcprush.com/trivicm/eu-ai-act-compliance-gatekeeper-v1-0-0)
+[![GitHub Release](https://img.shields.io/badge/Release-v1.0.0-success?style=flat-square&logo=github)](https://github.com/TrivicM/eu-ai-act-compliance-skill/releases)
+[![EU AI Act](https://img.shields.io/badge/Regulation-(EU)_2024%2F1689-003399?style=flat-square)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+
+> 🌐 **Ecosystem Availability:** Indexed and listed on [**MCPRush**](https://mcprush.com/trivicm/eu-ai-act-compliance-gatekeeper-v1-0-0) — the marketplace for Model Context Protocol (MCP) servers and AI agent skills — under **EU AI Act Compliance Gatekeeper (v1.0.0)**.
+
 > **"Do I need to label this as AI-generated, or am I good to go?"**
 
 If you develop software, create content, or integrate AI agents and models, this is a question you will inevitably face.
@@ -34,9 +41,11 @@ If a key fact is missing at any step (e.g., who controls the user interface, or 
 ### 🚀 Installation & Usage
 
 #### STEP 1: Install in Your Environment
-Copy this repository folder into your AI assistant or IDE skills directory (e.g., `.gemini/skills/`, `.agents/skills/`, or load it directly into your AI agent).
 
-Alternatively, download the ready-made **`eu-ai-act-compliance.skill`** package from the [Releases](https://github.com/TrivicM/eu-ai-act-compliance-skill/releases) page and load it directly into your AI agent or IDE.
+* **Option A — Via AI Agent Marketplace ([MCPRush](https://mcprush.com/trivicm/eu-ai-act-compliance-gatekeeper-v1-0-0)):**
+  Access and install the verified **EU AI Act Compliance Gatekeeper (`v1.0.0`)** listing directly via the [MCPRush Agent Skills Marketplace](https://mcprush.com/trivicm/eu-ai-act-compliance-gatekeeper-v1-0-0).
+* **Option B — Direct Package / Repository Install:**
+  Download the ready-made **`eu-ai-act-compliance.skill`** package from the [GitHub Releases](https://github.com/TrivicM/eu-ai-act-compliance-skill/releases) page, or copy this repository folder directly into your AI assistant or IDE skills directory (e.g., `.gemini/skills/`, `.agents/skills/`, or Claude/Cursor/Codex skill folders).
 
 #### STEP 2: Ask in Plain Language
 In your normal conversation with your AI assistant, simply describe what you are building or publishing:
@@ -67,6 +76,7 @@ This skill provides compliance assessments based on the official text of the EU 
 | Parameter | Value |
 | :--- | :--- |
 | **Skill Version** | `1.0.0` |
+| **Marketplace Listing** | [MCPRush — EU AI Act Compliance Gatekeeper (`v1.0.0`)](https://mcprush.com/trivicm/eu-ai-act-compliance-gatekeeper-v1-0-0) |
 | **Legal Baseline Date** | `2026-08-26` |
 | **Primary Legislation** | EU AI Act — Regulation (EU) 2024/1689 (Articles 25 & 50) |
 | **Commission Guidelines** | Transparency obligations under Article 50 — adopted 20 July 2026 |
