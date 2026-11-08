@@ -8,12 +8,16 @@ This reference outlines obligations for AI systems interacting with natural pers
 ## A. Human Interaction (Article 50(1))
 - **Rule**: Design and develop the system to ensure natural persons are informed that they are interacting with an AI system.
 - **Responsibility**: Depends on interface architecture (do not hardcode as Provider-only; usually falls on the entity controlling user access).
-- **Exception**: When obvious from the context and circumstances of use, or where authorized by law to detect, prevent, or investigate criminal offenses.
+- **Interactive Voice & Telephony**: Inbound and outbound telephone voicebots or real-time voice agents must audibly disclose that the caller/callee is speaking with an AI system at the immediate outset of the conversation.
+- **Exception**: When obvious from the context and circumstances of use (e.g., an app explicitly titled 'AI Voice Assistant'), or where authorized by law to detect, prevent, or investigate criminal offenses.
 
 ## B. Machine-Readable Marking of Synthetic Media (Article 50(2))
 - **Rule**: AI systems generating synthetic audio, image, video, or text content must mark outputs in a machine-readable format to ensure artificial generation or manipulation is detectable.
 - **Responsibility**: Provider.
-- **Exception**: Systems performing routine editing or auxiliary tasks (e.g., color correction, upscaling) that do not substantially alter the semantics of input data, or where authorized by law.
+- **Implementation State-of-the-Art (2026 Code of Practice)**:
+  - Technical metadata standards (e.g., C2PA / Content Credentials cryptographic manifests, IPTC DigitalSourceType metadata).
+  - Imperceptible / steganographic watermarking where technically feasible, resilient to compression and transcoding.
+- **Exception**: Systems performing routine editing or auxiliary tasks (e.g., color correction, upscaling, audio noise reduction, spell-checking, code syntax autocompletion) that do not substantially alter the semantics of input data, or where authorized by law.
 
 ## C. Emotion Recognition & Biometric Categorization (Article 50(3))
 - **Rule**: Natural persons must be notified of the operation of emotion recognition or biometric categorization systems to which they are exposed.
@@ -21,15 +25,17 @@ This reference outlines obligations for AI systems interacting with natural pers
 
 ## D. Deepfakes / Manipulated Media (Article 50(4) - subparagraph 1 & Article 3(60))
 - **Legal Definition (Article 3(60))**: AI-generated or manipulated image, audio, or video content that resembles existing persons, objects, places, entities, or events and would falsely appear to a person to be authentic or truthful.
+- **Voice Cloning & Audio Deepfakes**: Replicating a real person's recognizable voice characteristics using generative voice synthesis constitutes a deepfake if it would falsely appear authentic to a reasonable listener.
 - **Mandatory 4-Step Decision Tree (Before concluding "Deepfake"):**
   1. Is the content AI-generated or AI-manipulated?
   2. Is the content an image, audio, or video?
   3. Does the content resemble **existing persons, objects, places, entities, or events**?
   4. Would it **falsely appear to a reasonable person to be authentic or truthful**?
-- **Distinction from Fictional / Creative Works**: The skill MUST NOT automatically declare every realistic AI image a deepfake. Generic fictional or creative realistic artwork that does not depict existing entities or deceive users about authentic real-world events does not meet the deepfake threshold.
+- **Distinction from Fictional / Creative Works**: The skill MUST NOT automatically declare every realistic AI image or fictional voice a deepfake. Generic fictional or creative realistic artwork that does not depict existing entities or deceive users about authentic real-world events does not meet the deepfake threshold.
 - **Rule for Deepfakes**: The deployer must disclose that the content has been artificially generated or manipulated (visible/audible disclosure).
 - **Responsibility**: Deployer.
-- **Exceptions**: Lawfully authorized use (law enforcement) or where the content forms part of an evidently artistic, creative, satirical, or analogous work (disclosure obligation is limited to appropriate notification that does not hamper display or enjoyment).
+- **Artistic & Satirical Exception (Article 50(4) Subparagraph 3)**: Where the synthetic content forms part of an evidently artistic, creative, satirical, parodic, or analogous work:
+  - The disclosure obligation is **adapted rather than eliminated**: Deployers must provide appropriate disclosure that does not impede the display or enjoyment of the work (e.g., in accompanying descriptions, title cards, or end credits).
 
 ## E. Text on Matters of Public Interest (Article 50(4) - subparagraph 2)
 - **Definition**: AI-generated or manipulated text published with the purpose of informing the public on matters of public interest (e.g., news, elections, politics, public health).

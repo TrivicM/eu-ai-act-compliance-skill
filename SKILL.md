@@ -1,26 +1,28 @@
 ---
 name: eu-ai-act-compliance
-version: 1.0.0
+version: 1.1.0
 description: >
   EU AI Act compliance gatekeeper. Use when the user is developing AI systems, writing AI code,
   integrating APIs (OpenAI, Anthropic), developing web content, generating synthetic media (deepfakes, audio, text, images),
-  or asking about AI compliance/labels. 
+  telephony voicebots, or asking about AI compliance/labels. 
   Triggers: "EU AI Act", "AI compliance", "AI label", "watermark", "deepfake label", "C2PA",
   "Article 50", "do I need to label this", "AI Act assessment", "is this AI compliant".
 allowed-tools: Read, Grep, Glob, WebFetch, WebSearch
 ---
 
-# EU AI Act Compliance Gatekeeper (v1.0.0)
+# EU AI Act Compliance Gatekeeper (v1.1.0)
 
-> **Metadata:** Version 1.0.0 | Legal Baseline Date: 2026-08-26
+> **Metadata:** Version 1.1.0 | Legal Baseline Date: 2026-11-08
 
 This skill acts as a gatekeeper for professional AI workflows (coding, content creation, agentic systems).
 Its primary purpose is to prevent legal oversights (**under-compliance**) while avoiding unnecessary tagging and disclosures (**over-compliance**).
 
 ## What This Skill Changes
 - **Blocks over-compliance:** Stops false claims that AI-assisted code, SEO copy, or routine edits require public AI labels.
-- **Runs the Article 25 Gate:** Detects when a Deployer becomes a *Provider* via rebranding, substantial modification, or high-risk repurposing.
-- **Separates Provider vs. Deployer duties:** Distinguishes Art. 50(2) machine-readable marking from Art. 50(4) deepfake/public-interest disclosures.
+- **Enforces Telephony & Voicebot Transparency:** Mandates real-time audio disclosure for customer service voice agents at conversation start (Art. 50(1)).
+- **Runs the Article 25 Gate:** Distinguishes in-context prompt engineering / RAG (Deployer) from fine-tuning or white-labeling (Provider status).
+- **Separates Provider vs. Deployer duties:** Distinguishes Art. 50(2) machine-readable marking (C2PA/IPTC) from Art. 50(4) deepfake/public-interest disclosures.
+- **Recognizes Artistic & Satirical Exemptions:** Adapts disclosure requirements for creative fiction, podcasts, and parody without impairing user enjoyment.
 - **Enforces Missing-Facts & Living-Law Gates:** Halts to ask targeted questions when key facts are missing and verifies current EUR-Lex status.
 
 ## Core Rules
@@ -62,9 +64,13 @@ This skill treats the EU AI Act as a **living legal source**. During every asses
 6. If the current official source cannot be verified online, **explicitly state**: **"Current-law verification unavailable — assessment based on the locally stored legal references and may require re-verification."** In this scenario, reduce legal confidence rather than silently relying on historical references.
 
 ## Before and After (Worked Example)
-**Prompt:** *"We used an AI API to write a blog post about our new espresso machine. Do we need a visible 'AI-Generated' label under the EU AI Act?"*
+**Example 1 (Commercial Text):** *"We used an AI API to write a blog post about our new espresso machine. Do we need a visible 'AI-Generated' label under the EU AI Act?"*
 - **Without Skill:** *"Yes, any AI-generated text on a public website requires a visible AI disclosure."* *(Incorrect — confuses commercial copy with public-interest text).*
 - **With This Skill:** Separates upstream *Provider* marking (Art. 50(2)) from *Deployer* disclosure (Art. 50(4)). Commercial product blogs are **not** matters of public interest — **no visible deployer label is required** (`Disclosure: Not required`).
+
+**Example 2 (Telephony Voicebot):** *"Our company deployed an automated AI voice agent to call clients about insurance claims. Does it have to say it's an AI?"*
+- **Without Skill:** *"Only if the voice resembles a real person or deepfake."* *(Incorrect — confuses deepfake disclosure under Art. 50(4) with direct human interaction under Art. 50(1)).*
+- **With This Skill:** Identifies real-time conversational interaction under Article 50(1). Natural persons must be notified immediately at the opening of the call that they are interacting with an AI system (`Disclosure: Required`).
 
 ## What This Skill Will Not Do
 - **No formal legal counsel:** Does not replace a licensed attorney.

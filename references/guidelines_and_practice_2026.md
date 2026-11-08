@@ -7,11 +7,16 @@ When assessing compliance, official 2026 EU Guidelines take precedence over info
 
 ## 2. Implementation of Machine-Readable Marking (Article 50(2))
 - **No Legally Mandated Single Standard**: The AI Act requires marking outputs to be "effective, interoperable, robust, and reliable" (in light of generally acknowledged state of the art).
-- **C2PA, IPTC, Watermarking**: These technologies (including digital watermarks and Content Credentials) represent **possible implementation mechanisms**. They are recognized as best practices in the 2026 Guidelines.
+- **Dual-Layer Best Practice (2026 Code of Practice)**:
+  1. *Interoperable Manifest Metadata*: Cryptographic manifests (e.g. C2PA / Content Credentials, IPTC DigitalSourceType).
+  2. *Imperceptible Steganography*: Embedded watermarks resistant to compression, resizing, and format changes.
 - **Rule for Advisory Output**: Never claim "C2PA is a legally mandatory standard under the Act". The correct statement is: "Implement an effective machine-readable marking/provenance mechanism. C2PA is a strongly recommended implementation under the 2026 Code of Practice."
+- **Auxiliary Exemption**: Simple format conversions, noise reduction, color grading, or syntactic code completion do not trigger marking requirements.
 
 ## 3. Clear and Distinguishable Disclosure (Article 50(4) & (5))
 - Notifications must be designed so that a reasonably informed and observant person cannot easily overlook them.
+- **Voicebots & Real-Time Audio (Article 50(1))**: Automated telephony agents must include an audible disclosure in their opening greeting (e.g., *"Hello, you are speaking with an automated AI assistant on behalf of [Company]"*).
+- **Creative & Satirical Adaptations (Article 50(4))**: For podcasts, films, or creative works incorporating synthetic voices or deepfakes, disclosures must be prominent in descriptions, credits, or title cards without destroying the artistic experience.
 - **Proportionality**: Do not recommend intrusive or oversized visual badges for benign content. Disclosures must be clear without needlessly obstructing user experience or content enjoyment.
 - **Timing**: Disclosures must be present at the outset (first exposure) – e.g., a corner badge at the start of a deepfake video or an audio warning preceding a synthetic sound clip.
 

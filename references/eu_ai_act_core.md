@@ -17,9 +17,11 @@ To determine whether and how obligations under the EU AI Act apply, it is essent
 
 ### Article 25 Gate (Provider Status Trigger)
 Actor status depends on the **specific use-case facts**. Before assuming an actor is merely a Deployer, ALWAYS evaluate Article 25. An actor becomes a Provider (and assumes Article 50(1) and 50(2) obligations) if ANY of the following 3 conditions are met:
-1. **Own name/trademark**: Places a high-risk AI system on the market or puts it into service under its own name or trademark.
-2. **Substantial modification**: Makes a substantial modification to a high-risk AI system (or GPAI model, depending on rules) such that it remains high-risk (or transitions to a different category). *Caution*: Do not automatically equate fine-tuning, prompt engineering, API integration, or RAG with "substantial modification". Verify the facts and legal definition under Article 3.
-3. **Intended purpose changed**: Modifies the intended purpose of an AI system that was not previously classified as high-risk, in such a way that it becomes a high-risk AI system.
+1. **Own name/trademark (Article 25(1)(a))**: Places a third-party AI system on the market or puts it into service under its own name or trademark. White-labeling a vendor AI system as your own product triggers this condition.
+2. **Substantial modification (Article 25(1)(b))**: Makes a substantial modification to an AI system such that it remains high-risk or significantly alters its risk profile.
+   - *Prompt Engineering & RAG*: Passing prompts, system instructions, or retrieval context does NOT constitute substantial modification (actor remains Deployer).
+   - *Fine-Tuning on Custom Weights*: Retraining or fine-tuning model weights with specialized data constitutes substantial modification IF it alters the model's intended purpose or safety baselines.
+3. **Intended purpose changed (Article 25(1)(c))**: Modifies the intended purpose of an AI system (including a general-purpose AI model) that was not previously classified as high-risk, in such a way that it becomes a high-risk AI system (e.g., adapting a generic chatbot to triage emergency healthcare calls).
 
 **If facts are insufficient to determine Article 25 applicability:** Set `Actor = Unclear`. Targeted questions must be asked before finalizing the assessment.
 
