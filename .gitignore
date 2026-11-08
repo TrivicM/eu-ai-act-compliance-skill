@@ -3,3 +3,4 @@ changelog.md
 PROJECT_LOCATIONS.md
 *.zip
 *.skill
+.vscode/
