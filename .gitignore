@@ -4,3 +4,6 @@ PROJECT_LOCATIONS.md
 *.zip
 *.skill
 .vscode/
+
+# Local sync scripts
+sync-to-my-skills.ps1
